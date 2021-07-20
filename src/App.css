@@ -38,7 +38,17 @@
 }
 
 
-.form-wrapper {
+/* .form-wrapper {
   width: 40%;
   padding: 20px;
+} */
+
+.slider-image {
+  height: 100px;
+  object-fit: cover;
+}
+
+.main {
+  padding: 20px 0;
+  min-height: calc(100vh - 100px - 56px - 24px - 20px); /* 100ovh - slider - nav - footer - padding mainu*/
 }
