@@ -59,3 +59,15 @@
   padding: 20px 0;
   min-height: calc(100vh - 100px - 56px - 24px - 20px); /* 100ovh - slider - nav - footer - padding mainu*/
 }
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu {
+  position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top:0;
+  left:100%;
+  margin-top:-6px;
+}

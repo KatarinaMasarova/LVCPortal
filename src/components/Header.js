@@ -24,6 +24,14 @@ class Header extends React.Component {
                                     <li><a className="dropdown-item" href="#">MEAN</a></li>
                                     <li><a className="dropdown-item" href="#">Java</a></li>
                                     <li><a className="dropdown-item" href="#">DevOps</a></li>
+                                    <li className="dropdown-submenu">
+                                        <a tabindex="-1" href="#" className="dropdown-item">More options &raquo;</a>
+                                        <ul className="dropdown-menu">
+                                            <li><a className="dropdown-item" href="#">MERN</a></li>  
+                                            <li><a className="dropdown-item" href="#">MERN</a></li>  
+                                            <li><a className="dropdown-item" href="#">MERN</a></li>  
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                             <li className="nav-item"><NavLink to="/registration" className="nav-link">Registration</NavLink></li>
