@@ -20,16 +20,14 @@ class Header extends React.Component {
                                     All courses
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a className="dropdown-item" href="#">MERN</a></li>
-                                    <li><a className="dropdown-item" href="#">MEAN</a></li>
-                                    <li><a className="dropdown-item" href="#">Java</a></li>
-                                    <li><a className="dropdown-item" href="#">DevOps</a></li>
+                                    <li><NavLink to="/courses/mern" className="dropdown-item">MERN</NavLink></li>
+                                    <li><NavLink to="/courses/mean" className="dropdown-item">MEAN</NavLink></li>
+                                    <li><NavLink to="/courses/mevn" className="dropdown-item">MEVN</NavLink></li>
                                     <li className="dropdown-submenu">
-                                        <a tabindex="-1" href="#" className="dropdown-item">More options &raquo;</a>
+                                        <a tabindex="-1" href="#" className="dropdown-item">Node.js &raquo;</a>
                                         <ul className="dropdown-menu">
-                                            <li><a className="dropdown-item" href="#">MERN</a></li>  
-                                            <li><a className="dropdown-item" href="#">MERN</a></li>  
-                                            <li><a className="dropdown-item" href="#">MERN</a></li>  
+                                            <li><NavLink to="/courses/nodejs" className="dropdown-item">Node.js</NavLink></li>  
+                                            <li><NavLink to="/courses/expressjs" className="dropdown-item">Express.js</NavLink></li>
                                         </ul>
                                     </li>
                                 </ul>

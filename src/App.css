@@ -1,42 +1,12 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  overflow: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 .form-wrapper {
   padding: 30px !important;
@@ -57,7 +27,7 @@
 
 .main {
   padding: 20px 0;
-  min-height: calc(100vh - 100px - 56px - 24px - 20px); /* 100ovh - slider - nav - footer - padding mainu*/
+  min-height: calc(100vh - 100px - 56px - 24px - 100px); 
 }
 
 .navbar-nav li:hover > ul.dropdown-menu {
@@ -70,4 +40,60 @@
   top:0;
   left:100%;
   margin-top:-6px;
+}
+
+
+/* ---------------------------------------------- */
+.container-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #212529;
+  background-color: transparent;
+}
+
+/* HOME */
+
+h1 {
+  padding-bottom: 40px;
+}
+
+.home-image {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  padding: 10px;
+}
+
+.search-bar h6 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+
+.footer-top {
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+  padding: 10px 0;
+}
+
+footer {
+  padding: 10px 0;
 }
