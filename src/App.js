@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  NavLink
+  Route
 } from "react-router-dom";
 
 import Home from './components/Home';
@@ -39,7 +37,6 @@ function App() {
               <Route path="/help" component={Help}></Route>
               <Route path="/contact" component={Contact}></Route>
               
-
               <Route path="/courses/mern" component={CourseMern}></Route>
               <Route path="/courses/mean" component={CourseMean}></Route>
               <Route path="/courses/mevn" component={CourseMevn}></Route>

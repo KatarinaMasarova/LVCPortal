@@ -5,7 +5,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .form-wrapper {
@@ -28,6 +28,12 @@ body {
 .main {
   padding: 20px 0;
   min-height: calc(100vh - 100px - 56px - 24px - 100px); 
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    min-height: calc(100vh - 156px - 151px - 120px); 
+  }
 }
 
 .navbar-nav li:hover > ul.dropdown-menu {
@@ -62,6 +68,12 @@ h1 {
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 1000px) {
+  h1 {
+    padding-bottom: 20px;
+  }
+}
+
 .home-image {
   width: 100%;
 }
@@ -78,11 +90,57 @@ h1 {
 
 .search-bar {
   padding: 10px;
+  background: rgba(0,0,0,0.025);
+  height: 100%;
 }
 
 .search-bar h6 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+/* GALLERY */
+
+.gallery-wrapper {
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.gallery-wrapper img {
+  width: calc((100% - 60px) / 3);
+  margin: 10px;
+}
+
+.gall-img {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.gall-img:hover {
+  transform: scale(1.04);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 10;
+}
+
+@media screen and (max-width: 1240px) {
+  .gallery-wrapper img {
+    width: calc((100% - 40px) / 2);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gallery-wrapper img {
+    width: 100%;
+  }
 }
 
 
@@ -94,6 +152,19 @@ h1 {
   padding: 10px 0;
 }
 
+@media screen and (max-width: 480px) {
+  .footer-top-flex {
+    display: block;
+    text-align: center;
+  }
+}
+
 footer {
   padding: 10px 0;
+}
+
+/* COURSES */
+
+.course-h3 {
+  padding: 10px 0 30px;
 }

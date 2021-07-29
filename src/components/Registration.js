@@ -6,7 +6,7 @@ class Registration extends React.Component {
       <div className="main">
         <div className="container-fluid">
           <div className="row justify-content-center">
-            <div className="form-wrapper col-12 col-sm-9 col-md-7 col-lg-4">
+            <div className="form-wrapper col-12 col-sm-9 col-md-8 col-lg-5">
               <h3 className="text-center mb-3">Registration Form</h3>
               <form>
                   <div className="mb-3">
@@ -31,7 +31,7 @@ class Registration extends React.Component {
                   </div>
                   <div className="mb-3">
                     <label for="reg_course" className="form-label">Course *</label>
-                    <select class="form-select" id="reg_course" required>
+                    <select className="form-select" id="reg_course" required>
                       <option value=''>Select a course</option>
                       <option value="1">MEAN</option>
                       <option value="2">MERN</option>

@@ -2,7 +2,6 @@ import React from 'react';
  
 class Home extends React.Component {
   render() {
-    const { params } = this.props.match
     return (
         <div className="main">
             <div className="container-fluid">
