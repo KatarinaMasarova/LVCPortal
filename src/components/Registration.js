@@ -11,23 +11,23 @@ class Registration extends React.Component {
               <form>
                   <div className="mb-3">
                     <label for="reg_name" className="form-label">Name *</label>
-                    <input type="text" className="form-control" id="reg_name" required/>
+                    <input type="text" className="form-control" id="reg_name" placeholder="Name" required/>
                   </div>
                   <div className="mb-3">
                     <label for="reg_email" className="form-label">Email *</label>
-                    <input type="email" className="form-control" id="reg_email" required />
+                    <input type="email" className="form-control" id="reg_email" placeholder="Email" required />
                   </div>
                   <div className="mb-3">
                     <label for="reg_phone" className="form-label">Mobile number *</label>
-                    <input type="text" className="form-control" id="reg_phone" required/>
+                    <input type="text" className="form-control" id="reg_phone" placeholder="Phone number" required/>
                   </div>
                   <div className="mb-3">
                     <label for="reg_designation" className="form-label">Designation</label>
-                    <input type="text" className="form-control" id="reg_designation" />
+                    <input type="text" className="form-control" id="reg_designation" placeholder="Designation"/>
                   </div>
                   <div className="mb-3">
                     <label for="reg_location" className="form-label">Location</label>
-                    <input type="text" className="form-control" id="reg_location" />
+                    <input type="text" className="form-control" id="reg_location" placeholder="Location"/>
                   </div>
                   <div className="mb-3">
                     <label for="reg_course" className="form-label">Course *</label>
@@ -41,7 +41,7 @@ class Registration extends React.Component {
                   </div>
                   <div className="mb-3">
                     <label for="reg_remarks" className="form-label">Remarks</label>
-                    <textarea className="form-control" id="reg_remarks" />
+                    <textarea className="form-control" id="reg_remarks" placeholder="If you want to share something with us..."/>
                   </div>
                   {/* <div className="mb-3 form-check">
                     <input type="checkbox" className="form-check-input" id="exampleCheck1" />

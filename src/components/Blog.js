@@ -14,7 +14,7 @@ function Blog() {
   const articleDiv = articles.map( article => {
       return (
           <div className="card" key={article.id}>
-              <NavLink to={`${url}/${article.id}`} className="">{article.title}</NavLink>
+              <NavLink to={`${url}/${article.id}`} className="card-title">{article.title}</NavLink>
           </div>
       )
   });

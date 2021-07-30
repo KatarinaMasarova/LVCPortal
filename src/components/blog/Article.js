@@ -11,7 +11,7 @@ function Article(props) {
 
 
   return (
-    <div className="container-90 main">
+    <div>
         <h3>{articles[artId - 1].title}</h3> 
         <p>{articles[artId - 1].content}</p>
     </div>
